@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Concert One', cursive;
+    color: #dfdae2;
+    background: linear-gradient(90deg, rgba(16,10,19,1) 14%, rgba(147,27,27,1) 50%, rgba(139,99,43,1) 100%);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+header {
+    height: 75px;
+    font-size: 20px;
+    text-shadow: -0.06em 0 red,  0.06em 0 cyan;
+    letter-spacing: 0.08em;
+    text-align: center;
+    line-height: 2;
+}
+
+.display-box {
+    height: 275px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-items: flex-start;
+}
+
+.game-img {
+    width: 180px;
+    height: 180px;
+    background: #fff;
+    margin: 0 5px;
+    border-radius: 50%;
+    box-shadow: #fff 0px 0px 2px 2px;
+    object-fit: contain;
+}
+
+.info-text {
+    height: 60px;
+}
+
+.containers {
+    display: flex;
+    width: 365px;
+    justify-content: space-around;
+}
+
+.reload-div {
+    width: 120px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2px;
+    color: #fff;
+}
+
+.restart-btn {
+    color: black;
+    margin: 2px;
+    padding: 2px;
+    cursor: pointer;
+} 
+
+.btns-box {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.btnsGame {
+    width: 55px;
+    height: 67px;
+    margin: 5px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+} 
+
+.btnsGame img {
+    width: 100%;   
+    height: auto;
+}
+.game-score {
+    text-align: center;
+    margin-top: 10px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+span {
+    margin: 5px;
+    font-size: 20px;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+.fa-github {
+    font-size: 25px;
+    color: #dfdae2;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+h1:hover {
+    transform: scale(1.3);
+}
+
+h3:hover{
+    transform: scale(1.3)
+}
+
+.btnsGame:hover {
+    border: 1px solid black;
+    box-shadow: #20e4ce 0 0 3px 2px;
+}
+
+.game-img:hover {
+    transform: scale(1.2);
+    box-shadow: #20e4ce 0 0 3px 2px;
+    
+}
+
+.restart-btn:hover {
+    border: 1px solid black;
+    border-radius: 5px;
+    background: none;
+    color: white;
+    box-shadow: #20e4ce 0 0 3px 2px;
+}
